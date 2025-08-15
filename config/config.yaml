@@ -1,0 +1,90 @@
+# YouTube Video Aggregation Pipeline - Konfiguration
+
+# YouTube Data API v3 Einstellungen
+youtube_api:
+  api_key: "YOUR_YOUTUBE_API_KEY_HERE"
+  max_results: 50
+  quota_limit: 10000  # Tägliches Quota-Limit
+
+# OpenAI API Einstellungen
+openai:
+  api_key: "YOUR_OPENAI_API_KEY_HERE"
+  model: "gpt-3.5-turbo"
+  embedding_model: "text-embedding-ada-002"
+  max_tokens: 150
+  temperature: 0.1
+
+# Supabase Einstellungen
+supabase:
+  url: "YOUR_SUPABASE_URL_HERE"
+  service_role_key: "YOUR_SUPABASE_SERVICE_ROLE_KEY_HERE"
+  anon_key: "YOUR_SUPABASE_ANON_KEY_HERE"
+
+# Text-Verarbeitung Einstellungen
+processing:
+  chunk_size: 1000          # Token pro Chunk
+  chunk_overlap: 200        # Überlappung zwischen Chunks
+  min_chunk_size: 100       # Minimale Chunk-Größe
+  max_chunks_per_video: 50  # Maximum Chunks pro Video
+  enable_sentiment_analysis: true
+  batch_size: 100           # Batch-Größe für API-Aufrufe
+  retry_attempts: 3         # Anzahl Wiederholungsversuche
+  retry_delay: 1.0          # Verzögerung zwischen Versuchen (Sekunden)
+
+# Klassifizierung Einstellungen
+classification:
+  relevance_threshold: 0.7  # Schwellenwert für Relevanz
+  keywords:
+    - "artificial intelligence"
+    - "machine learning"
+    - "deep learning"
+    - "neural network"
+    - "data science"
+    - "python programming"
+    - "tensorflow"
+    - "pytorch"
+    - "computer vision"
+    - "natural language processing"
+    - "nlp"
+    - "ai"
+    - "ml"
+    - "algorithm"
+    - "statistics"
+    - "data analysis"
+
+# Logging Einstellungen
+logging:
+  level: "INFO"             # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "pipeline.log"
+  max_file_size: 10485760   # 10MB
+  backup_count: 5
+
+# Performance Einstellungen
+performance:
+  max_concurrent_requests: 10
+  request_timeout: 30       # Sekunden
+  connection_pool_size: 20
+  enable_caching: true
+  cache_ttl: 3600          # Cache TTL in Sekunden
+
+# Datenbank Schema Einstellungen
+database:
+  videos_table: "videos"
+  chunks_table: "video_chunks"
+  enable_full_text_search: true
+  enable_vector_search: true
+
+# Monitoring und Metriken
+monitoring:
+  enable_prometheus: false
+  prometheus_port: 8000
+  enable_health_check: true
+  health_check_port: 8080
+
+# Entwicklungseinstellungen
+development:
+  debug_mode: false
+  mock_api_calls: false
+  save_intermediate_results: false
+  verbose_logging: false
