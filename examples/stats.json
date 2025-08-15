@@ -1,0 +1,101 @@
+{
+  "pipeline_stats": {
+    "total_urls": 10,
+    "metadata_fetched": 10,
+    "classified_relevant": 8,
+    "transcripts_extracted": 7,
+    "chunks_created": 42,
+    "embeddings_generated": 42,
+    "indexed_in_supabase": 8,
+    "errors": 1,
+    "processing_time": 45.67,
+    "error_details": [
+      "Transcript not available for video: kft1AJ9WVDk"
+    ]
+  },
+  "detailed_results": {
+    "videos": [
+      {
+        "video_id": "aircAruvnKk",
+        "title": "But what is a neural network? | Chapter 1, Deep learning",
+        "description": "Subscribe for more (part 2 will be on backpropagation): http://3b1b.co/neural-networks-sub",
+        "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+        "channel_title": "3Blue1Brown",
+        "published_at": "2017-10-05T15:00:01Z",
+        "duration": 1140,
+        "view_count": 8500000,
+        "like_count": 185000,
+        "comment_count": 12500,
+        "tags": ["neural network", "deep learning", "machine learning", "AI", "mathematics"],
+        "category_id": 28,
+        "language": "en"
+      },
+      {
+        "video_id": "IHZwWFHWa-w",
+        "title": "Gradient descent, how neural networks learn | Chapter 2, Deep learning",
+        "description": "How do neural networks learn? In this video I continue the neural network series by talking about gradient descent.",
+        "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+        "channel_title": "3Blue1Brown",
+        "published_at": "2017-10-16T15:00:01Z",
+        "duration": 1260,
+        "view_count": 6200000,
+        "like_count": 142000,
+        "comment_count": 8900,
+        "tags": ["gradient descent", "neural network", "optimization", "machine learning"],
+        "category_id": 28,
+        "language": "en"
+      },
+      {
+        "video_id": "Ilg3gGewQ5U",
+        "title": "What is backpropagation really doing? | Chapter 3, Deep learning",
+        "description": "The third video in the neural network series covers backpropagation.",
+        "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+        "channel_title": "3Blue1Brown",
+        "published_at": "2017-11-03T15:00:01Z",
+        "duration": 810,
+        "view_count": 4800000,
+        "like_count": 118000,
+        "comment_count": 6700,
+        "tags": ["backpropagation", "neural network", "deep learning", "calculus"],
+        "category_id": 28,
+        "language": "en"
+      }
+    ],
+    "chunks_sample": [
+      {
+        "chunk_index": 0,
+        "content": "Welcome to this comprehensive tutorial on machine learning. Today we'll explore the fundamentals of neural networks and how to implement them using Python. Machine learning has revolutionized the way we approach data analysis and prediction tasks.",
+        "token_count": 38,
+        "start_time": 0,
+        "end_time": 30
+      },
+      {
+        "chunk_index": 1,
+        "content": "In this video, we'll start with the basics and gradually move to more advanced concepts. First, let's understand what artificial intelligence really means and how it differs from traditional programming approaches.",
+        "token_count": 35,
+        "start_time": 30,
+        "end_time": 60
+      }
+    ],
+    "classification_scores": [
+      ["But what is a neural network? | Chapter 1, Deep learning", 0.95],
+      ["Gradient descent, how neural networks learn | Chapter 2, Deep learning", 0.92],
+      ["What is backpropagation really doing? | Chapter 3, Deep learning", 0.90],
+      ["Backpropagation calculus | Chapter 4, Deep learning", 0.88],
+      ["Machine Learning Explained", 0.85],
+      ["Python Machine Learning Tutorial", 0.82],
+      ["TensorFlow 2.0 Complete Course", 0.80],
+      ["Data Science Full Course", 0.78],
+      ["Artificial Intelligence Explained", 0.75],
+      ["Computer Vision with OpenCV", 0.65]
+    ]
+  },
+  "timestamp": "2024-01-15T12:30:45.123456",
+  "demo_mode": false,
+  "config_summary": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "embedding_model": "text-embedding-ada-002",
+    "relevance_threshold": 0.7
+  }
+}
